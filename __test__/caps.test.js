@@ -32,7 +32,7 @@ describe( 'event', ()=>{
 
     it('should be log out in transit',async()=>{
         event.emit('in transit',payload);
-    //    await consoleSpy();
+       await consoleSpy();
        expect(consoleSpy).toHaveBeenCalled();
    })
 
